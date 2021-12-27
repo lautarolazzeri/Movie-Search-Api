@@ -30,13 +30,11 @@ function getResults(q) {
 
                 content.appendChild(box);
 
-                box.innerHTML = 
-                `
+                box.innerHTML = `
                 <div class="title">Title:- ${movie.Search[a].Title},(${movie.Search[a].Year})</div>
                 <div class="type">Type:-${movie.Search[a].Type}</div>
                 <div class="poster"><img src="${movie.Search[a].Poster}"></img></div>
-                <div class="moreinfo"><a href="https://www.imdb.com/title/${movie.Search[a].imdbID}" target="_blank">More Details</a></div>
-                `;
+                <div class="moreinfo"><a href="https://www.imdb.com/title/${movie.Search[a].imdbID}" target="_blank">More Details</a></div>`;
             }
         })
 }
